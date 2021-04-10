@@ -1,83 +1,97 @@
 <!DOCTYPE html>
-<html>
-        <head>
-            <title>Maria Jose Portafolio</title>
-            <meta charset="UTF-8" />
-            <meta name="viewport" content="with=device-width, initial-scale=1"/>
-            <link rel="stylesheet" type="text/css" href="style.css">
-            <style> 
-                /*unisited link*/ a:link { color:white; }
-                /*visited link */ a:visited { color: rgb(214, 207, 212); }
-                /*mouse over link */ a:hover { color: #216788; }
-                /*selected link */ a:active { color: #116586; }
-            </style>
-        </head>
-        
-    <body>
-    <!-- Note -->
-        <div class="header">
-            <h3>Maria Jose Guerrero</h3>
-                <div>
-                    <ul>
-                        <li><a href="#AboutMe">About Me</a></li>
-                        <li><a href="#RESUME">RESUME</a></li>
-                        <li><a href="#Work">Work</a></li>
-                        <li><a href="#Contact-Me">Contact Me</a></li>
-                    </ul>
-                </div>
-        </div>
+<html lang="en">
 
-        <img src="Avila.JPG" alt="Avila Caracas Venezuela" class="center"/> 
-        <div class="Avila">
-            <h2>About the Avila Mountain</h2>
-            <p>The Ávila National Park, officially known as Waraira Repano National Park for its name indigenous Caribean name, protects part of the Cordillera de la Costa Central mountain range, in the coastal region of central-northern Venezuela. 
-                The area's highest elevation is Pico Naiguatá, at 2,765 meters above sea level.</p>
-        </div>
-        
-    <!-- The flexible grid (content) -->
-        <div class="row">
-            <div id="AboutMe" class="side">
-                <h2>About Me</h2>
-                <div>
-                    <img src="Me.jpg" style="height: 200px;"/>
-                </div>
-                <p>Grow up in Caracas, Venezuela.</p>
-                <p>Under Graduated at Lynn University at Boca Raton, Florida with a Bachalor of Science in International Business.</p>
-                <p>I started my MBA as soon as I Graduated from college on Hospitality. </p>
-                    <div class="fakeimg" style="height: 60px;">image</div><br>
-                    <div class="fakeimg" style="height: 60px;">image</div><br>
-                    <div class="fakeimg" style="height: 60px;">image</div><br>
+<head>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700;800;900&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/761e4c8e5c.js" crossorigin="anonymous"></script>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+</head>
+
+<body>
+    <section class="hero">
+        <nav>
+            <img class="logo" src="Me.jpg" alt="Maria Jose Guerrero's Logo">
+            <ul id="nav-list">
+                <li><a href="#about-me">About me</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact-me">Contact</a></li>
+            </ul>
+
+            <button class="hamburger" id="hamburger">
+                <i class="fas fa-bars"></i>
+            </button>
+        </nav>
+
+        <div class="hero-area">
+            <div class="hero-txt">
+                <h1>Maria Jose Guerrero</h1>
+                <p>Sales Associate at GROF USA</p>
             </div>
 
-            <div id="RESUME" class="main">
-                <h2>RESUME</h2>
-                <h5>Internships and Work.</h5>               
-                <div class="fakeimg" style="height: 200px;">image</div>
-                <p>Work part time as a barista at Trend Tea during my college.</p>
-
-                <div id="Work" class="Work">
-                    <h2>Work</h2>
-                    <h5>discription</h5>
-                    <div class="fakeimg" style="height: 200px;">image</div>
-                    <p>text</p>
+            <div class="socials">
+                <div><a href="https://www.linkedin.com/in/maria-guerrero/" class=social>
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="#ffffff" width="50" height="50" viewBox="0 0 24 24">
+                            <path d="M4.98 3.5c0 1.381-1.11 2.5-2.48 2.5s-2.48-1.119-2.48-2.5c0-1.38 1.11-2.5 2.48-2.5s2.48 1.12 2.48 2.5zm.02 4.5h-5v16h5v-16zm7.982 0h-4.968v16h4.969v-8.399c0-4.67 6.029-5.052 6.029 0v8.399h4.988v-10.131c0-7.88-8.922-7.593-11.018-3.714v-2.155z" />
+                        </svg> 
+                    </a>
                 </div>
-            </div> 
-        
-        <div id= "Contact-Me" class="information">
-            <h2>Contact Information</h2>
-            <ul>
-                <p>Linkedin:</p>
-                <p>Facebook:</p>
-                <p>Instagram:</p>
-                <p>Number:(XXX)XXX-XXXX</p>
-                <p>Email:</p>
-            </ul>    
         </div>
-    </body>
+    </section>
 
-<!-- Footer -->
-    <div class="footer">
-        <h2>Made by Maria Jose </h2>
-        <p>2021 Portafolio.</p>
-    </div>
+    <section class="sub-section">
+        <div class="information">
+            <h2>About Me</h2>
+            <p>My name is Maria Jose Guerrero</p>
+            <p></p>
+        </div>
+
+        <div class="headshot-container">
+            <iframe src="RESUME.pdf" width="100%" height="350px"> </iframe>
+        </div>
+    </section>
+
+    <section class="sub-section-alternative" id="projects">
+        <h2>Projects</h2>
+        <div class="project-container">
+            <div class="project-card">
+                <img class="project-image" src="WeatherForecast.PNG" alt="Project One Image" />
+                <h3>Weather Forecast</h3>
+                <p class="subtext">The persons will be abel to check the weather of the city the want to know about.</p>
+                <hr />
+                <p class="subtext"><a class="project-link" href="https://mjguerrero.github.io/weather/">View here</a></p>
+            </div>
+
+            <div class="project-card">
+                <img class="project-image" src="CryptoCurrently.PNG" alt="Work Life Balance" />
+                <h3>Crypto Currently</h3>
+                <p class="subtext">Group Project about the coins that are more popular.The users will be able to learn more about each coins.</p>
+                <hr />
+                <p class="subtext"><a class="project-link" href="https://mjguerrero.github.io/cryptocurrently/">View here</a></p>
+            </div>
+
+            <div class="project-card">
+                <img class="project-image" src="RESUME.PNG" alt="Work Life Balance" />
+                <h3>RESUME</h3>
+                <p class="subtext">About my career.</p>
+                <hr />
+                <p class="subtext"><a class="project-link" href="">View here</a></p>
+            </div>
+        </div>
+    </section>
+
+    <footer id="contact-me">
+        <h2>Contact me</h2>
+        <p>machuguerrero@gmail.com</p>
+        <p>305-766-3323</p>
+    </footer>
+
+    <script src="index.js"></script>
+</body>
+
 </html>

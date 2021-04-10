@@ -1,109 +1,199 @@
-* {
-    box-sizing: border-box;
-    padding: 0;
-    margin: 0;
+body {
+    font-family: 'Poppins', sans-serif;
+}
+section {
+    background-color: white;
+    /* border: solid black 1px; */
 }
 
-/* Style the body */
-body{
-    font-family: Arial;
-    margin: 0;
-}
-
-/* Header/logo Title */
-.header {
-    padding: 20px;
-    background: cornflowerblue;
+.hero {
+    background-color: rosybrown;
+    height: 100vh;
     color: white;
-    font-family: Arial, Helvetica, sans-serif;
+    font-size: 40px;    
 }
 
-.header h3 {
-    display: inline-block;
-    font-size: 40px;
+footer {
+    height: 300px;
+    background-color: rosybrown;
+    color: white;
+    text-align: center;
+    padding: 80px;
 }
 
-.header div {
-    padding-top: 15px;
-    margin-right: 20px;
-    float: right;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    font-size: 20px;
-}
+nav {
+    display: flex;
+    justify-content: space-between; 
+} 
 
-.header div ul {
+ul {
+    display: flex;
     list-style-type: none;
+    position: relative;
 }
 
-.header div ul li {
-    display: inline-block;
-    margin-left: 25px;
+li {
+    width: 200px;  
+    font-size: 30px;
+    text-decoration: none;
+}
+
+h1 {
+    font-size: 90px;
+    margin: 30px;
+}
+
+h2 {
+    font-size: 50px;
+}
+
+p {
+    margin: 0px 0px 60px 30px;
+    font-size: 40px;
+    font-weight: 300;
+}
+
+.subtext {
+    font-size: 20px;
+    font-weight: 100px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.hero-area {
+    display: flex;
+    height: 100%;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.hero-text {
+    margin-left: 100px;
+    margin-bottom: 200px;
+}
+
+.button:hover {
+    background-color: lightpink;
+    color: black
+}
+
+.button:active {
+    background-color: rosybrown;
+    color: #0b0c0c
+}
+
+.socials {
+    padding-bottom: 200px;
+}
+
+.logo {
+   height: 200px;
+   margin: 30px
+}
+
+.social {
+    margin: 20px
+}
+
+.sub-section {
+    display: flex;
+    justify-content: space-around;
+    padding: 80px;
+}
+
+.sub-section-alternative {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding: 80px;
+}
+.headshot {
+    width: 300px;
+}
+
+.headshot-container {
+    display: flex;
+    align-items: center;
+}
+
+.project-card {
+    width: 300px;
+    height: 500px;
+    border: 1px solid black;
+    box-shadow: 5px 5px 20px;
+    margin: 10px;
+
+}
+
+.project-container {
+    display: flex;
+    justify-content: space-around;
+}
+
+@media only screen and (max-width: 1000px) {
+    .project-container {
+        display: flex;
+        flex-wrap: wrap;
+    }
+}
+
+.project-image {
+    margin-top: 30px;
+    width: 250px;
+    border-radius: 125px;
+}
+
+hr {
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.project-link {
+    text-decoration: none;
+    color: #ef744b;
 }
 
 a {
-    color: rgb(234, 231, 235);
     text-decoration: none;
-}
-  
-/*Text*/
-.Avila {
-    text-align: center;
-    background: rgb(162, 122, 255);
-    padding: 30px;
-    font-family: Arial, Helvetica, sans-serif;
-    color: black;
-}
-.Avila h2{
-    display: inline-block;
-    font-size: 30px;
+    color: white;
 }
 
-/* Column container */
-.row {
-    display: flex;
-    flex-wrap: wrap;
-    text-align: left;
+.hamburger {
+    display: none;
 }
 
-/* Create two unequal colums that sits next to each other. Sidebar/left colum */
-.side {
-    flex: 30%;
-    background-color: indianred;
-    padding: 20px;
+.hamburger:focus{
+    outline: 0;
 }
 
-/* Main Column */
-.main {
-    flex: 70%;
-    background-color: cornflowerblue;
-    padding: 20px;
-}
-.fakeimg{
-    background-color: lavenderblush;
-    width: 100%;
-    padding: 20px;
-}
+@media only screen and (max-width: 1000px) {
+    .hamburger {
+        display: block;
+        border: 0;
+        background-color: transparent;
+        color: white;
+        font-size: 30px;
+        margin: 20px;
+        align-self: flex-end;
+    }
 
-/* information */
-.information {
-    flex: 100%;
-    background-color: rgb(105, 86, 190);
-    padding: 20px;
-    text-align: center;
-}
-/* Footer */
-.footer {
-    padding: 20px;
-    text-align: center;
-    background: rgb(117, 43, 177);
-    clear: both;
-    font-family: Arial, Helvetica, sans-serif;
-    flex: 100%;
-}
+    ul {
+        display: none;
+        background-color: #2b2c38;
+        margin: 0ppx;
+    }
 
-/* Responsive layout when the screen is less than 700px wide, make the two columns stack on top of each other instead of nextto each other */
-@media screen and (max-with: 700px){
-    .row, .navbar {
-        flex-direction: column;
+    ul.show {
+        display: block;
+    }
+
+    nav {
+        display: flex;
+        flex-direction: column-reverse;
+        background-color: #2b2c38;
+    }
+
+    .logo {
+        display: none;
     }
 }
